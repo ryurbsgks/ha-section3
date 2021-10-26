@@ -6,7 +6,9 @@
     "lib": "lib"
   },
   "scripts": {
+    "prestart":"npx sequelize-cli db:migrate",
     "start": "node index.js",
+    "pretest": "npx sequelize-cli db:migrate",
     "test": "NODE_ENV=test mocha '__tests__/server.test.js' --exit",
     "report": "NODE_ENV=test mocha '__tests__/server.test.js' --exit --reporter @mochajs/json-file-reporter",
     "submit": "codestates-submission"
