@@ -1,0 +1,186 @@
+{
+  "stats": {
+    "suites": 8,
+    "tests": 12,
+    "passes": 12,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-23T10:53:19.902Z",
+    "end": "2022-02-23T10:53:20.111Z",
+    "duration": 209
+  },
+  "tests": [
+    {
+      "title": "🧩 데이터베이스에 연결해야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  데이터베이스 연결\n====================\n 🧩 데이터베이스에 연결해야 합니다.",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 데이터베이스에 `users` 테이블이 존재해야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  데이터베이스 연결\n====================\n 🧩 데이터베이스에 `users` 테이블이 존재해야 합니다.",
+      "duration": 4,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "HTTPS 프로토콜을 사용하는 서버여야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 Protocol - HTTP over Secure HTTPS 프로토콜을 사용하는 서버여야 합니다.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 로그인 요청시 전달받은 유저아이디, 비밀번호가 데이터베이스에 저장된 정보와 완벽히 일치하는 경우, 'ok' 메세지와 상태코드 200이 응답에 포함되어야 합니다",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signin 🧩 로그인 요청시 전달받은 유저아이디, 비밀번호가 데이터베이스에 저장된 정보와 완벽히 일치하는 경우, 'ok' 메세지와 상태코드 200이 응답에 포함되어야 합니다",
+      "duration": 58,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 로그인 요청시 전달받은 유저 아이디 혹은 비밀번호가 잘못된 경우, 'invalid user' 메세지와 상태코드 404가 응답에 포함되어야 합니다",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signin 🧩 로그인 요청시 전달받은 유저 아이디 혹은 비밀번호가 잘못된 경우, 'invalid user' 메세지와 상태코드 404가 응답에 포함되어야 합니다",
+      "duration": 6,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 로그인 성공시 쿠키로 JWT 토큰을 전달해야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signin 🧩 로그인 성공시 쿠키로 JWT 토큰을 전달해야 합니다.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 회원가입 요청이 성공하면 상태코드 201와 JWT 토큰이 응답에 포함되어야 합니다",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signup 🧩 회원가입 요청이 성공하면 상태코드 201와 JWT 토큰이 응답에 포함되어야 합니다",
+      "duration": 17,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 해당 유저 email이 이미 데이터베이스에 존재한다면 409(conflict) 상태코드로 응답을 돌려줘야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signup 🧩 해당 유저 email이 이미 데이터베이스에 존재한다면 409(conflict) 상태코드로 응답을 돌려줘야 합니다.",
+      "duration": 8,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 username, email, password, mobile 파라미터 중 하나라도 요청에서 제공되지 않았다면 422(unprocessable entity) 상태코드로 응답을 돌려줘야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signup 🧩 username, email, password, mobile 파라미터 중 하나라도 요청에서 제공되지 않았다면 422(unprocessable entity) 상태코드로 응답을 돌려줘야 합니다.",
+      "duration": 17,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 로그아웃 요청시 205 상태코드로 응답해야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signout 🧩 로그아웃 요청시 205 상태코드로 응답해야 합니다.",
+      "duration": 5,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 쿠키에 jwt 토큰이 존재하며 토큰에 유저정보가 담겨져 있는경우, 해당 유저의 정보를 리턴해야 합니다 ",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 GET /auth 🧩 쿠키에 jwt 토큰이 존재하며 토큰에 유저정보가 담겨져 있는경우, 해당 유저의 정보를 리턴해야 합니다 ",
+      "duration": 6,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 쿠키에 JWT이 없는 요청 혹은 잘못된 토큰을 전달받은 경우, 응답에는 'not authorized' 메세지가 포함되어야 합니다",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 GET /auth 🧩 쿠키에 JWT이 없는 요청 혹은 잘못된 토큰을 전달받은 경우, 응답에는 'not authorized' 메세지가 포함되어야 합니다",
+      "duration": 6,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "🧩 데이터베이스에 연결해야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  데이터베이스 연결\n====================\n 🧩 데이터베이스에 연결해야 합니다.",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 데이터베이스에 `users` 테이블이 존재해야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  데이터베이스 연결\n====================\n 🧩 데이터베이스에 `users` 테이블이 존재해야 합니다.",
+      "duration": 4,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "HTTPS 프로토콜을 사용하는 서버여야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 Protocol - HTTP over Secure HTTPS 프로토콜을 사용하는 서버여야 합니다.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 로그인 요청시 전달받은 유저아이디, 비밀번호가 데이터베이스에 저장된 정보와 완벽히 일치하는 경우, 'ok' 메세지와 상태코드 200이 응답에 포함되어야 합니다",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signin 🧩 로그인 요청시 전달받은 유저아이디, 비밀번호가 데이터베이스에 저장된 정보와 완벽히 일치하는 경우, 'ok' 메세지와 상태코드 200이 응답에 포함되어야 합니다",
+      "duration": 58,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 로그인 요청시 전달받은 유저 아이디 혹은 비밀번호가 잘못된 경우, 'invalid user' 메세지와 상태코드 404가 응답에 포함되어야 합니다",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signin 🧩 로그인 요청시 전달받은 유저 아이디 혹은 비밀번호가 잘못된 경우, 'invalid user' 메세지와 상태코드 404가 응답에 포함되어야 합니다",
+      "duration": 6,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 로그인 성공시 쿠키로 JWT 토큰을 전달해야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signin 🧩 로그인 성공시 쿠키로 JWT 토큰을 전달해야 합니다.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 회원가입 요청이 성공하면 상태코드 201와 JWT 토큰이 응답에 포함되어야 합니다",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signup 🧩 회원가입 요청이 성공하면 상태코드 201와 JWT 토큰이 응답에 포함되어야 합니다",
+      "duration": 17,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 해당 유저 email이 이미 데이터베이스에 존재한다면 409(conflict) 상태코드로 응답을 돌려줘야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signup 🧩 해당 유저 email이 이미 데이터베이스에 존재한다면 409(conflict) 상태코드로 응답을 돌려줘야 합니다.",
+      "duration": 8,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 username, email, password, mobile 파라미터 중 하나라도 요청에서 제공되지 않았다면 422(unprocessable entity) 상태코드로 응답을 돌려줘야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signup 🧩 username, email, password, mobile 파라미터 중 하나라도 요청에서 제공되지 않았다면 422(unprocessable entity) 상태코드로 응답을 돌려줘야 합니다.",
+      "duration": 17,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 로그아웃 요청시 205 상태코드로 응답해야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signout 🧩 로그아웃 요청시 205 상태코드로 응답해야 합니다.",
+      "duration": 5,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 쿠키에 jwt 토큰이 존재하며 토큰에 유저정보가 담겨져 있는경우, 해당 유저의 정보를 리턴해야 합니다 ",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 GET /auth 🧩 쿠키에 jwt 토큰이 존재하며 토큰에 유저정보가 담겨져 있는경우, 해당 유저의 정보를 리턴해야 합니다 ",
+      "duration": 6,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 쿠키에 JWT이 없는 요청 혹은 잘못된 토큰을 전달받은 경우, 응답에는 'not authorized' 메세지가 포함되어야 합니다",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 GET /auth 🧩 쿠키에 JWT이 없는 요청 혹은 잘못된 토큰을 전달받은 경우, 응답에는 'not authorized' 메세지가 포함되어야 합니다",
+      "duration": 6,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
