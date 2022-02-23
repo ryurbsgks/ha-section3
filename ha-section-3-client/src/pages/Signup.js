@@ -23,6 +23,21 @@ export default function Signup () {
     //        history.push("/");
     //
     // TODO : 모든 항목을 입력하지 않았을 경우 에러를 표시해야 합니다.
+
+    if(!userinfo.email || !userinfo.password || !userinfo.username || !userinfo.mobile) {
+      return setErrorMessage("모든 항목은 필수입니다");
+    } 
+
+    axios.post("https://localhost:4000/signup", {
+      email: userinfo.email,
+      password: userinfo.password,
+      username: userinfo.username,
+      mobile: userinfo.mobile
+    }).then( () =>{
+      history.push("/login")
+    }).catch( error => {
+      console.log(error);
+    })
   };
   return (
     <div>
@@ -60,7 +75,7 @@ export default function Signup () {
           >
             회원가입
           </button>
-          <div className='alert-box' />
+          <div className='alert-box' >{errorMessage}</div>
         </form>
       </center>
     </div>
